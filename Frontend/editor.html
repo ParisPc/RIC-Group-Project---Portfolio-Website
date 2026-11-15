@@ -24,7 +24,7 @@
             Add your background, skills, and projects.
         </p>
         <p class="sample-notice">
-            Frontend preview: changes are not saved yet.
+            Drafts are saved only in this browser. They are not published.
         </p>
 
         <form id="editor-form">
@@ -144,9 +144,9 @@
                 <button class="button button-primary" type="submit">
                     Save Portfolio
                 </button>
-                <a class="button editor-back" href="index.html">
-                    Back to Home
-                </a>
+                <a class="button editor-back" href="portfolio.html?preview=1">
+    Preview My Portfolio
+</a>
             </div>
 
             <p id="editor-message" role="status"></p>
@@ -157,13 +157,6 @@
         <p>RIC Student Portfolios · A student-built project</p>
     </footer>
 
-    <script>
-        document.getElementById("editor-form").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            document.getElementById("editor-message").textContent =
-                "Saving is not connected yet. Your entries have not been saved.";
-        });
-    </script>
+    <script src="editor.js"></script>
 </body>
 </html>
